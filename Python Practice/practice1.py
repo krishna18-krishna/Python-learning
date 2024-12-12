@@ -22,6 +22,7 @@ string1(["Hello", "world"])
 
 
 # Replace 
+# using print
 def replace_substring(s, old_sub, new_sub):
     print(s.replace(old_sub, new_sub))
 
@@ -31,7 +32,7 @@ replacement = "oranges"
 replace_substring(input_string, substring_to_replace, replacement)
 # or
 
-
+# using return
 def replace_substring1(s, old_sub, new_sub):
     return s.replace(old_sub, new_sub)
 
@@ -42,30 +43,10 @@ replacement = "oranges"
 output_string = replace_substring1(input_string, substring_to_replace, replacement)
 print(output_string)
 
-# def process_input(input_value):
-#     try:
-#         # Try converting input to integer
-#         number = int(input_value)
-#         print(f"Processing number: {number}")
-#     except ValueError:
-#         print("Error: Input is not a valid integer.")
-#     except TypeError:
-#         print("Error: Input is of the wrong type.")
-#     else:
-#         print("Processing completed successfully.")
-#     finally:
-#         print("End of processing.")
-
-# process_input("123")
-
-# process_input("abc")
-
-# process_input([1, 2, 3])
-
-
+# try & except
 def input(num):
     try:
-        sum = num // 10
+        sum = int(num)
         print(f"Answer: {sum}")
     except ValueError:
         print("Error: Input is not a valid integer")
